@@ -1,0 +1,34 @@
+.btn {
+    padding: 0.8em 1em;
+    font-size: 20px;
+    line-height: 1em;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.1em;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 1px #0008;
+}
+
+.btn + .btn {
+    margin-right: 20px;
+}
+
+.btn.btn-round {
+    border-radius: 1.3em;
+}
+
+.btn.btn-round.btn-icon {
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 40px;
+    margin-top: -0.05em;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color-dark);
+}
