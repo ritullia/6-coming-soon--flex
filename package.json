@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rita",
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.1"
