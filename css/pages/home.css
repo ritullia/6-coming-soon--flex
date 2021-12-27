@@ -23,40 +23,36 @@
     padding-bottom: 30px;
     background-image: url(../../images/banner1.png);
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .hero > .row-short {
+    align-items: center;
     text-align: center;
 }
 
 .hero .logo {
     width: 100%;
     height: 50px;
-    margin-bottom: 45px;
     object-fit: contain;
     object-position: center;
 }
 
 .hero .main-title {
-    margin-bottom: 15px;
     font-size: 44px;
     text-transform: uppercase;
 }
 
 .hero .main-description {
-    margin-bottom: 30px;
     color: #777c;
     font-size: 18px;
 }
 
 .hero .clock {
-    margin-bottom: 30px;
 }
 
 .hero .form {
-    margin: 0 5% 40px;
     width: 90%;
 }
 
@@ -74,10 +70,8 @@
 /* MAIN CONTENT: start */
 
 .column > * {
-    margin-bottom: 20px;
 }
 .column > *:last-child {
-    margin-bottom: 0;
 }
 
 .content-title {
@@ -102,16 +96,14 @@
     color: #999;
 }
 
-main .form > button {
-    float: right;
+main .form {
+    align-items: flex-end;
 }
 
 @media (min-width: 900px) {
     main .form > input.input {
-        width: calc(50% - 10px);
     }
     main .form > input.input:last-of-type {
-        float: right;
     }
 }
 .progress-bar {
@@ -128,7 +120,11 @@ footer.container {
     font-size: 17px;
 }
 
-.socials {
+.container > .socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 15px 0;
     border-bottom: 2px solid #fff;
     position: relative;
@@ -150,21 +146,24 @@ footer.container {
     background-color: #fff;
     color: var(--primary-color);
 }
+footer.container > .row-short {
+    gap: 0;
+}
 
 footer .logo {
     max-height: 50px;
     width: 100%;
+    margin-bottom: 40px;
     object-fit: contain;
-    margin: 50px 0;
     object-position: top;
 }
 
 footer .trio {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 footer .trio > p {
-    float: left;
     padding: 0 10px;
     position: relative;
 }
@@ -198,8 +197,8 @@ footer .link {
 }
 
 @media (max-width: 700px) {
-    footer .trio > p {
-        width: 100%;
+    footer .trio {
+        flex-direction: column;
     }
     footer .trio > p::before {
         display: none;
